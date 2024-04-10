@@ -9,7 +9,7 @@ const createToken = (_id) => {
 
 // Login
 const login = async (req, res) => {
-    const { username, email, password } = req.body; // Added username
+    const {  email, password } = req.body; // Added username
 
     try {
         // Checking if the user exists and password is correct
