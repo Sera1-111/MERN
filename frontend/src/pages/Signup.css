@@ -1,0 +1,61 @@
+.signup {
+  background-color: rgba(249, 249, 249, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.signup h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333; /* Darken the color of the heading */
+  font-family: 'Arial', sans-serif; /* Change the font family */
+}
+
+.signup label {
+  font-weight: bold;
+  margin-bottom: 10px; /* Increase the bottom margin */
+  display: block;
+  color: #555; /* Darken the color of the label */
+}
+
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* Increase the bottom margin */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.signup button {
+  background-color: #003459;
+  color: #fff;
+  padding: 12px 20px; /* Increase padding for button */
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.signup button:hover {
+  background-color: #030303; /* Darken the background color on hover */
+}
+
+.signup button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px; /* Reduce font size for error message */
+}

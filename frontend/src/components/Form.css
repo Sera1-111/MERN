@@ -1,0 +1,61 @@
+label,
+input {
+  display: block;
+ 
+}
+.create {
+  background-color: rgba(0, 52, 89, 0.9); /* Set background color with RGBA notation */
+  color: white; /* Set font color to white */
+  padding: 20px; /* Add padding for space inside the form */
+  border-radius: 8px; /* Add border radius for rounded corners */
+}
+
+
+input {
+  padding: 12px; /* Increase padding for better appearance */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px; /* Increase border-radius for smoother edges */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Add a subtle focus effect */
+}
+
+form button {
+  background: #003459;
+  border: 0;
+  color: #fff;
+  padding: 12px 20px; /* Increase padding for better appearance */
+  font-family: "Poppins", sans-serif;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add transform transition for hover effect */
+}
+
+form button:hover {
+  background-color: #001d33;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+  transform: translateY(-2px); /* Add a slight lift effect on hover */
+}
+
+div.error {
+  padding: 12px; 
+  background: #ffe6e6; 
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+input.error {
+  border: 1px solid #dc3545; /* Darken error border */
+}
+
+

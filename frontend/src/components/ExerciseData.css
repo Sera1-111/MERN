@@ -1,0 +1,48 @@
+/* Homepage */
+.home {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 100px;
+  }
+  
+  .Exercise-Data {
+    background: rgba(255, 255, 255, 0.5); /* Set the background color with an alpha value for transparency */
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .Exercise-Data h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: var(--primary);
+  }
+  
+  .Exercise-Data p {
+    margin: 0;
+    font-size: 0.9em;
+    color: black;
+  }
+  
+  .Exercise-Data span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: #f1f1f1;
+    padding: 6px;
+    border-radius: 50%;
+    color: #333;
+  }
+  
+  /* Background Image */
+  body {
+    background-image: url("https://images.pexels.com/photos/878151/pexels-photo-878151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Add background image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    margin: 0; /* Remove default body margin */
+    font-family: "Poppins", sans-serif; /* Set default font family */
+  }
+  

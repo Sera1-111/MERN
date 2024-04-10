@@ -1,0 +1,84 @@
+.workout-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .workout-card {
+    width: calc(50% - 20px); /* Adjust card width as needed */
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .workout-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .workout-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .workout-card:hover::before {
+    opacity: 1;
+  }
+  
+  .workout-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .workout-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    z-index: 2;
+    transition: transform 0.3s ease;
+  }
+  
+  .workout-card:hover .workout-details {
+    transform: translateY(-50%);
+  }
+  
+  .workout-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .workout-info p {
+    margin-bottom: 20px;
+  }
+  
+  .workout-info button {
+    padding: 10px 20px;
+    background-color: #003459;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .workout-info button:hover {
+    background-color: #003459;
+  }
+  

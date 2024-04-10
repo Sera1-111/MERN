@@ -1,0 +1,63 @@
+/* Navbar */
+header {
+    background-color: rgba(0, 52, 89, 0.9); /* Set background color with RGBA notation */
+    padding: 10px 20px;
+    
+  }
+  
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #fff;
+    font-family:'Lobster', cursive; ;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info span {
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .auth-links {
+    display: flex;
+  }
+  
+  .auth-links a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
