@@ -2,17 +2,19 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLogout } from '../CustomHook/useLogout';
 import { useAuth } from '../CustomHook/UseAuth';
-import './Navbar.css'
+import './Navbar.css';
 
 const Navbar = () => {
-    const Navigate = useNavigate();
+    const navigate = useNavigate();
     const { logout } = useLogout();
     const { user } = useAuth();
+    const backendUrl = process.env.REACT_APP_BACKEND_URL; // Accessing backend URL from environment variable
 
     const logOutHandler = () => {
         logout();
-        Navigate('/'); // Redirect to the intro page after logout
-      };
+        navigate('/');
+    };
+
     return (
         <header>
             <div className="container">
@@ -27,8 +29,8 @@ const Navbar = () => {
                         </div>
                     ) : (
                         <div>
-                            <button onClick={() => { window.location.href = '/login'; }}>Login</button>
-                            <button onClick={() => { window.location.href = '/signup'; }}>Signup</button>
+                            <button onClick={() => { window.location.href = `${backendUrl}/login`; }}>Login</button>
+                            <button onClick={() => { window.location.href = `${backendUrl}/signup`; }}>Signup</button>
                         </div>
                     )}
                 </nav>

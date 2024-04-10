@@ -1,6 +1,5 @@
 {
-  "proxy": "https://mern-1ogg.onrender.com",
-  "name": "frontend",
+ "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
