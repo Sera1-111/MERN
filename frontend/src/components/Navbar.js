@@ -10,7 +10,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     const { logout } = useLogout();
     const { user } = useAuth();
-    // const backendUrl = process.env.REACT_APP_BACKEND_URL; // Accessing backend URL from environment variable
+    
 
     const logOutHandler = () => {
         logout();
@@ -35,7 +35,7 @@ const Navbar = () => {
                             <Link to='/signup'><h1>Signup</h1></Link>
                             
                           </div>
-                    )}s
+                    )}
                 </nav>
             </div>
         </header>
