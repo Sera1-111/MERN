@@ -6,7 +6,7 @@ export const useLogin = () => {
     const [isLoading, setIsLoading] = useState(false);
     const { dispatch } = useAuth(); 
 
-    const login = async (username, email, password) => { // Added username parameter
+    const login = async (username, email, password) => {
         setIsLoading(true);
         setError(null);
 
@@ -14,16 +14,16 @@ export const useLogin = () => {
             const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/user/login`, {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({ username, email, password }) // Modified body to include username
+                body: JSON.stringify({ username, email, password }) 
             });
 
             if (!response.ok) {
-                const json = await response.json();
-                setIsLoading(false);
+                const json = await response.json(); //extracting the error msg from json
+                setIsLoading(false); // as  the loading attempt has failed
                 setError(json.error);
             } else {
                 const json = await response.json();
-                localStorage.setItem('user', JSON.stringify(json));
+                localStorage.setItem('user', JSON.stringify(json)); //storing the data in the loal storage
                 dispatch({type: 'LOGIN', payload: json});
                 setIsLoading(false);
             }

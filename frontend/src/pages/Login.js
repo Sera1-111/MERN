@@ -5,12 +5,12 @@ import './Login.css'
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [username, setUsername] = useState(''); // Added username state
+    const [username, setUsername] = useState(''); 
     const { login, isLoading, error } = useLogin();
 
     const formSubmitHandler = async (e) => {
         e.preventDefault();
-        await login(username, email, password); // Modified login function call to include username
+        await login(username, email, password); //passing value to the login function
     };
 
     return (

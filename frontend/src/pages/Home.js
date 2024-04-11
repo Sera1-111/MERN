@@ -19,7 +19,7 @@ const Home = ()=>{
          dispatch({type : 'SET_WORKOUTS', payload : json})
          }
         }
-        if(user){
+        if(user){              //if user is logged in fetch workout
             fetchWorkout()
         }
         
