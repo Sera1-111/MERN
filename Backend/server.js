@@ -5,6 +5,14 @@ const mongoose = require('mongoose')
 const workoutRoutes = require('./Routes/Workouts')
 const userRoutes = require ('./Routes/UserRoutes')
 
+//cors 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "https://mern-1-gtmb.onrender.com"); // Allow requests from this origin
+  res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE"); // Allow specified HTTP methods
+  res.header("Access-Control-Allow-Headers", "Content-Type,Authorization"); // Allow specified headers
+  next();
+});
+
 // express app
 const app = express()
 
