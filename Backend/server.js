@@ -4,17 +4,19 @@ const express = require('express')
 const mongoose = require('mongoose')
 const workoutRoutes = require('./Routes/Workouts')
 const userRoutes = require ('./Routes/UserRoutes')
+const cors = require('cors');
 
 // express app
 const app = express()
 
 //cors
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://mern-1-gtmb.onrender.com"); // Allow requests from this origin
-  res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE"); // Allow specified HTTP methods
-  res.header("Access-Control-Allow-Headers", "Content-Type,Authorization"); // Allow specified headers
-  next();
-});
+// Use cors middleware with options
+app.use(cors({
+  origin: 'https://mern-1-gtmb.onrender.com', // Allow requests from this origin
+  methods: ['GET', 'PUT', 'POST', 'DELETE'], // Allow specified HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'] // Allow specified headers
+}));
+
 
 // middleware
 app.use(express.json())
