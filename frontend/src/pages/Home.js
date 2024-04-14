@@ -8,7 +8,7 @@ const Home = ()=>{
  const {user} = useAuth()
     useEffect(()=>{
         const fetchWorkout = async ()=>{
-         const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/workouts`, {
+         const response = await fetch('https://mern-1ogg.onrender.com/api/workouts', {
             headers : {
                 'Authorization': `Bearer ${user.token}`
             }
