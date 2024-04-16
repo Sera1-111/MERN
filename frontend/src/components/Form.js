@@ -23,13 +23,14 @@ const Form = () => {
 
     const workout = {title, load, sets}
 
-    const response = await fetch('https://mern-1-gtmb.onrender.com/api/workouts', {
+    const response = await fetch('https://mern-1ogg.onrender.com/api/workouts', {
       method: 'POST',
       body: JSON.stringify(workout),
       headers: {  
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${user.token}`
       }
+      
     })
     const json = await response.json()
 
