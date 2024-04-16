@@ -11,7 +11,7 @@ export const useSignup = () => {
         setError(null);
 
         try {
-            const response = await fetch('https://mern-1ogg.onrender.comapi/user/signup', {
+            const response = await fetch('https://mern-1ogg.onrender.com/api/user/signup', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({ username, email, password }) // Modified body to include username
