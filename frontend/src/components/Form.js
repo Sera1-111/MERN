@@ -26,7 +26,7 @@ const Form = () => {
     const response = await fetch('https://mern-1-gtmb.onrender.com/api/workouts', {
       method: 'POST',
       body: JSON.stringify(workout),
-      headers: {
+      headers: {  
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${user.token}`
       }

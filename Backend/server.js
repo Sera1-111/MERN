@@ -12,7 +12,7 @@ const app = express()
 //cors
 // Use cors middleware with options
 app.use(cors({
-  origin: 'https://mern-1-gtmb.onrender.com', // Allow requests from this origin
+  origin: ['https://mern-1-gtmb.onrender.com','http://localhost:3000'], // Allow requests from this origin
   methods: ['GET', 'PUT', 'POST', 'DELETE'], // Allow specified HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'] // Allow specified headers
 }));
