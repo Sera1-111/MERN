@@ -16,9 +16,9 @@ header {
   
   h1 {
     margin: 0;
-    font-size: 50px;
+    font-size: 30px;
     color: #fff;
-    font-family:'Lobster', cursive; ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif cursive ;
   }
   
   nav {
@@ -50,14 +50,25 @@ header {
     background-color: rgba(255, 255, 255, 0.2);
   }
   
-  .auth-links {
+  .link-auth {
     display: flex;
-  }
-  
-  .auth-links a {
-    color: #fff;
-    margin-right: 10px;
+    justify-content: space-between;
+}
+
+.link-auth a {
     text-decoration: none;
-    font-weight: bold;
-  }
-  
+    color: #fff;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 25px;
+    
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.link-auth a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    background-color:rgba(126, 139, 149, 0.9); /* Darker shade on hover */
+}

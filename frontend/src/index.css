@@ -5,6 +5,14 @@
 }
 
 
+@media (max-width: 768px) {
+  .pages {
+    padding: 10px;
+    margin: 0; 
+  }
+}
+
+
 
 
 
